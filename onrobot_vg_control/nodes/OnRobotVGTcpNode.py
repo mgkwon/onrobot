@@ -60,10 +60,10 @@ class OnRobotVGTcp:
 
 if __name__ == '__main__':
     try:
-        ip = rospy.get_param('/onrobot/ip', '192.168.1.1')
-        port = rospy.get_param('/onrobot/port', '502')
-        changer_addr = rospy.get_param('/onrobot/changer_addr', '65')
-        dummy = rospy.get_param('/onrobot/dummy', False)
+        ip = rospy.get_param('onrobot/ip', '192.168.1.1')
+        port = rospy.get_param('onrobot/port', '502')
+        changer_addr = rospy.get_param('onrobot/changer_addr', '65')
+        dummy = rospy.get_param('onrobot/dummy', False)
         rospy.init_node(
             'OnRobotVGTcpNode', anonymous=True, log_level=rospy.DEBUG)
         OnRobotVGTcp()

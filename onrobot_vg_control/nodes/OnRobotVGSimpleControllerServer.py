@@ -24,7 +24,7 @@ class OnRobotVGNode:
             'OnRobotVGOutput', OnRobotVGOutput, queue_size=1)
         self.command = OnRobotVGOutput()
         self.set_command_srv = rospy.Service(
-            "/onrobot_vg/set_command",
+            "onrobot_vg/set_command",
             SetCommand,
             self.handleSettingCommand)
 
